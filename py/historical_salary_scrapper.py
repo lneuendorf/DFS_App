@@ -4,7 +4,7 @@ import requests
 import io
 
 class HistoricalSalaryScrapper():
-    def __init__(self, data_path='data/'):
+    def __init__(self, data_path='../data/'):
         self.data_path = data_path
         self.BASE_URL = "http://rotoguru1.com/cgi-bin/fyday.pl?game=GAME&scsv=1&week=WEEK&year=YEAR"
         self.YEARS_FD = list(map(str, range(2011, 2022)))
